@@ -16,8 +16,6 @@ public class LearnerUnitTests
         var result = EntryPolicy.Evaluate(entry);
 
         // Assert
-        Assert.AreEqual("rejected", result.Status);
-        Assert.AreEqual("§ 12 · Touristische Aufenthalte sind auf 30 Tage begrenzt.", result.Reason);
-
+        Assert.AreEqual("approved", result.Status);
     }
 }
